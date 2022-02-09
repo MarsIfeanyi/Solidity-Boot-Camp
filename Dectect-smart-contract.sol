@@ -7,7 +7,7 @@ pragma solidity >=0.7.0 <0.9.0;
 contract DetectSmartContract {
     function DetectSize() external {
         uint256 size;
-        address addr = msg.sender;
+        address addr = msg.sender; // the current caller
 
         assembly {
             size := extcodesize(addr)
