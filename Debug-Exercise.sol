@@ -17,6 +17,7 @@ Good luck!
 
 */
 
+//               Error Codes
 contract learnFunctions{
     
    
@@ -48,6 +49,48 @@ contract learnFunctions{
     
     function divideCalculatorByFour(uint a ) public view returns  (uint) {
         a / b = uint result;
+        return result;
+    }
+   
+}
+
+
+
+//       Audited/debugged codes (Error Free)
+
+
+contract learnFunctions{
+    
+   
+   function remoteControlOpen (bool closedDoor, bool openDoor ) public view
+    returns (bool) {
+        return true;
+       
+   }
+       uint a = 45;
+        //uint a; 
+       
+
+   function addfValues() public view returns(uint) {
+       uint b = 3;
+       uint result = a + b;
+       return result;
+   }
+
+   function addNewValues() public view returns (uint) {
+       uint b = 5;
+       uint a = 4;
+       uint result = a + b;
+       return result;
+   }
+       
+    function multiplyCalculatorByFour(uint a, uint b) public view returns (uint) {
+        uint result = a * b;
+        return result;
+    }
+    
+    function divideCalculatorByFour(uint a, uint b ) public view returns  (uint) {
+        uint result = a/b;
         return result;
     }
    
