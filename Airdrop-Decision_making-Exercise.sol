@@ -21,8 +21,8 @@ contract AirdropDecision {
         }
     }
 
-    /* codebug dectected, if stakingwallet is greater than 10, then else statement executes.
-    correct the logic so that the else statemnet only executes when stakingwallet is less than 10 */
+    /* I  dectected codebug, if stakingwallet is greater than 10, then else statement executes.
+    hence I corrected the logic so that the else statemnet only executes when stakingwallet is less than 10 */
 
     function airDrop() public view returns (uint256) {
         //if logic updated for values greater than and equal to 10
