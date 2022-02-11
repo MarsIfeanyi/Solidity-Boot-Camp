@@ -1,7 +1,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract learnFunctions {
-    //Fuction that Multiplies N-numbers based on the defined  parameters
+    //I wrote Fuction that Multiplies N-numbers based on the defined  parameters
     function multiplyCalculator(
         uint256 a,
         uint256 b,
@@ -13,7 +13,7 @@ contract learnFunctions {
         return result;
     }
 
-    //Fuction that calculates the Mean N-numbers based on the defined parameters
+    // I wrote Fuction that calculates the Mean of N-numbers based on the defined parameters
     function MeanCal(
         uint256 x,
         uint256 y,
@@ -27,7 +27,7 @@ contract learnFunctions {
         return mean;
     }
 
-    // function that Calculates the age of a person.
+    //I wrote function that Calculates the age of a person.
     function AgeCal(uint256 YearofBirth, uint256 PresentYear)
         public
         pure
