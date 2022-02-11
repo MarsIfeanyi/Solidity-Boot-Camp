@@ -27,5 +27,12 @@ contract learnFunctions {
        uint  mean = sum/n;
        return mean;
     }
+
+    // write a function that can calculate age of a person
+
+    function AgeCal (uint YearofBirth, uint PresentYear) public pure returns(uint) {
+        uint Age = PresentYear - YearofBirth;
+                return Age;
+    }
 } 
    
