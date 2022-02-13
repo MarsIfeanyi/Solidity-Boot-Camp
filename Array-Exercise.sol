@@ -25,6 +25,12 @@ contract Arrays {
         changeArray.push(2);
         changeArray.push(3);
         changeArray.push(4);
+
+        // Alternatively using looping to push element
+
+        for (uint256 i = 1; i <= 4; i++) {
+            changeArray.push(i);
+        }
     }
 
     function changeArrayLength() public view returns (uint256) {
