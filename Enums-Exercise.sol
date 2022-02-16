@@ -11,6 +11,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract createEnums {
+    //enum for various color of shirt
     enum shirtColor {
         RED,
         WHITE,
