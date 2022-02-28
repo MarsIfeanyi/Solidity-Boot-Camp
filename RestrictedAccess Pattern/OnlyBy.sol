@@ -1,3 +1,5 @@
+// This smart contract allows only the owner to change the address of the contract
+
 pragma solidity >=0.7.0 <0.9.0;
 
 contract RestrictedAcces {
