@@ -1,9 +1,8 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract RestrictedAcces {
-    //initializing the state variables to the current caller and timestamp
+    //initializing the state variables to the current caller
     address public owner = msg.sender;
-    uint256 public creationTime = block.timestamp;
 
     /*write a modifier called onlyBy that will require the current caller to be equal to an account address which we set as an input in the modifier and if the requirement fails send a message that says - Sender not authorized!*/
 
