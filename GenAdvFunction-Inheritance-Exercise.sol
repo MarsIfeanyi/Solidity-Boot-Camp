@@ -56,7 +56,7 @@ contract C {
         data = a;
     }
 
-    function getData() public view returns () {
+    function getData() public view returns (uint256) {
         return data;
     }
 
@@ -92,7 +92,7 @@ contract E is C {
         result = compute(23, 5);
     }
 
-    function getResult() public view returns () {
+    function getResult() public view returns (uint256) {
         return result;
     }
 
