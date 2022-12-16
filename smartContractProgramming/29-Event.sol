@@ -24,3 +24,46 @@ contract Event {
         emit Message(msg.sender, _to, message);
     }
 }
+
+/**
+ * Hint:
+ * Events are stored and saved outside the contract and thus they are cheaper.
+ * Events are stored in Log and Smart contracts can access logs.
+ * 
+ * VIP:Events are stored in a special data structure called Logs.
+ * 
+ * Each event is tied to the smart contract or the account address that emitted the event in the transaction
+ * 
+ * When we emit events there are two kinds of parameters:
+ * 1. indexed parameters
+ * 2. non-indexed parameters
+ * 
+ * Hint: You can have upto 3 indexed parameter. indexed parameters are also known as topics.
+ * 
+ * VIP: Indexed parameters = Topics
+ * 
+ * Indexed parameters are much easier to search for and query than non-indexed parameters.
+ * 
+ * There non-indexed parameters (Data) are ABI encoded.
+ * 
+ * Hint:Non-indexed parameter cost less gas, however they are hard to decode if you don't have the ABI
+ * 
+ * 
+ *Defining an event
+ event storedNumber(
+    uint256 indexed oldNumber,
+    uint256 indexed newNumber,
+    uint256 addedNumber,
+    address sender
+
+ )
+
+ //Emitting an event
+ emit storedNumber(
+    favoriteNumber,
+    _favoriteNumber,
+    _favoriteNumber + favoriteNumber,
+    msg.sender
+ )
+ * 
+ */
