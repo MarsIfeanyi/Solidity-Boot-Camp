@@ -3,7 +3,9 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 /**
- *  Structs allow you to group data together
+ *  Structs allow you to group data together.
+ *
+ * Hint:In Solidity, a struct is a user-defined type that allows you to store a collection of different data types under one name. A struct is similar to a class in other programming languages.
  */
 
 contract Structs {
