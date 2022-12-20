@@ -3,7 +3,11 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 /**
- * Enum allows you to express more choices
+ * Enum allows you to express more choices.
+ *
+ * Hint: In Solidity, an enum is a special data type that allows you to define a set of named constants. An enum is similar to an enumeration in other programming languages.
+ *
+ * Enums can be useful for defining a set of named constants that have a specific meaning in your contract. For example, you could use an enum to represent the different states of a contract (e.g., "Active", "Inactive", "Expired").
  */
 
 contract Enum {
@@ -16,7 +20,7 @@ contract Enum {
         Canceled
     }
 
-    // Using the enum as a state variable
+    // Creating a varaible called "status" of the enum(Status) type
     Status public status;
 
     struct Order {
@@ -24,6 +28,7 @@ contract Enum {
         Status status;
     }
 
+    // Creating a variable called "orders" of the Struct(Order) type
     Order[] public orders;
 
     //How to return an enum from a function
