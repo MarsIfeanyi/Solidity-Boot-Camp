@@ -16,7 +16,7 @@ contract FunctionModifier {
     //Basic modifiers
     modifier whenNotPaused() {
         require(!paused, "paused");
-        _;
+        _; // Hint: The underscore tells solidity to call the actual function that this modifier wraps
     }
 
     function inc() external whenNotPaused {
