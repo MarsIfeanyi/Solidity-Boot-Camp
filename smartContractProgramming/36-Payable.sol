@@ -11,7 +11,7 @@ pragma solidity >=0.7.0 <0.9.0;
  */
 
 contract Payable {
-    address payable public owner; //Hint: The "payable" keyword should immediately after the type ie address
+    address payable public owner; //Hint: The "payable" keyword should come immediately after the type ie address
 
     constructor() {
         //Hint: since owner is of type address payable and  msg.sender is of type address, then you need to call payable() on msg.sender, this converts them to the same type
