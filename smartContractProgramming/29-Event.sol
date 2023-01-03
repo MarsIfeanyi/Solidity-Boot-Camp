@@ -44,7 +44,7 @@ contract Event {
  * 
  * Indexed parameters are much easier to search for and query than non-indexed parameters.
  * 
- * There non-indexed parameters (Data) are ABI encoded.
+ * The non-indexed parameters (Data) are ABI encoded.
  * 
  * Hint:Non-indexed parameter cost less gas, however they are hard to decode if you don't have the ABI
  * 
