@@ -6,10 +6,6 @@ pragma solidity >=0.7.0 <0.9.0;
  * VIP: Order of inheritance -> most base-like to derived.
  *
  * The contract that is base-like is the contract that inherits the least
- *
- *
- *
- *
  */
 
 contract X {
