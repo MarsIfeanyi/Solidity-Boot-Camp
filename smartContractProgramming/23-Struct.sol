@@ -15,11 +15,10 @@ contract Structs {
         address owner;
     }
 
-    //Using the struct as a state variable
-
+    //Using the struct as a state variable... ie declaring variable and array of the type "Struct"
     Car public car;
     Car[] public cars; // Array of Structs
-    mapping(address => Car[]) public carsByOwner; // Mapping of array of sturcuts
+    mapping(address => Car[]) public carsByOwner; // Mapping of array of struct
 
     /**
      * HOW to Initialize a struct
