@@ -2,7 +2,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 /**
- * To start the first thing we need to do is to declare the functions that are going to be inhertied by the child class as "virtual" and then in the child contract we "override" it.
+ * To start the first thing we need to do is to declare the functions that are going to be inherited by the child class as "virtual" and then in the child contract we "override" it.
  *
  * Hint: the "virtual" keyword shows that the functions can be customized by the child contract
  */
