@@ -37,7 +37,7 @@ contract U is S("s"), T("t") {
 
 }
 
-// Dynamic Inputs... Hint: You use this when you don't the inputs to the constructors
+// Dynamic Inputs... Hint: You use this when you don't know the inputs to the constructors
 contract V is S, T {
     constructor(string memory _name, string memory _text) S(_name) T(_text) {} // VIP The order is not important
 }
