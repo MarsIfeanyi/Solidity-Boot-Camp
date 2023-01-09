@@ -15,6 +15,7 @@ interface IERC721 {
 }
 
 contract DutchAuction {
+    //state variables
     uint private constant DURATION = 7 days;
 
     IERC721 public immutable nft;
@@ -48,10 +49,27 @@ contract DutchAuction {
     }
 
     // function to calcualte the current price of the nft, when the buyer calls the buy function
-
     function getPrice() public view returns (uint) {
         uint timeElapsed = block.timestamp - startAt;
         uint discount = discountRate * timeElapsed;
         return startingPrice - discount;
+    }
+
+    function buy() external payable {
+        // checks that it hasn't expired yet
+        require(block.timestamp < expiresAt, "auction expired");
+
+        uint price = getPrice();
+        require(msg.value >= price, "ETH is less than price");
+
+        nft.transferFrom(seller, msg.sender, nftId);
+
+        uint refund = msg.value - price;
+        if (refund > 0) {
+            payable(msg.sender).transfer(refund);
+        }
+
+        // send all the ETH to seller and then close the auction
+        selfdestruct(seller);
     }
 }
