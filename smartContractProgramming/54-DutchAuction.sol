@@ -7,7 +7,17 @@ pragma solidity >=0.7.0 <0.9.0;
  * DUTCHAUCTION is an auction where the seller sets the price at the start of the auction and the price goes down over time.
  * when the buyer decides that the price is low enough and he buys the auction ends...
  *
- * Here we want to write a dutch auction for an NFT
+ * Here we want to write a dutch auction for an NFT.
+ * 
+ * 
+ * Dutch auction for NFT.
+
+Auction
+- Seller of NFT deploys this contract setting a starting price for the NFT.
+- Auction lasts for 7 days.
+- Price of NFT decreases over time.
+- Participants can buy by depositing ETH greater than the current price computed by the smart contract.
+- Auction ends when a buyer buys the NFT.
  */
 
 interface IERC721 {
