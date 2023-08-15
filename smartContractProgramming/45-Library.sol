@@ -37,7 +37,7 @@ library ArrayLib {
 
 
 contract TestArray{
-    // A for B pattern
+    // A for B pattern;
     uisng ArrayLib for uint[];//Hint: This line of code tells solidity that for this data type, uint[], attach all of the functionalities defined inside the library ArrayLib... ie we are declaring the library we are using on the data type.
 
     uint[] public arr =[3,2,1]
@@ -49,5 +49,37 @@ contract TestArray{
 
         // an easier way... this requires to use the A for B pattern
         return arr.find(2);
+    }
+}
+
+
+
+
+library WeirdMath {
+    int private constant factor = 100;
+
+    function applyFactor(int self) public pure returns (int) {
+        return self * factor;
+    }
+
+    function add(int self, int numberToAdd) public pure returns (int) {
+        return self + numberToAdd;
+    }
+}
+
+contract StrangeMath {
+    // Method 1 - using Library name with dot notation 
+    function multiplyWithFactor(int num) public pure returns (int) {
+        return WeirdMath.applyFactor(num);
+
+        // WeirdMath.add(num1, num2);
+    }
+
+
+    // Method 2 - the 'using' keyword and dot notation.
+    // Syntax: using <<Library Name>> for data type of the first argument in the method to be called.
+    using WeirdMath for int;
+    function addTwoNums(int num1, int num2) public pure returns (int) {
+        return num1.add(num2);
     }
 }
