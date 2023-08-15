@@ -5,7 +5,7 @@ contract Constants {
     /**
      * Hint: When you have a state variable that will not change it is better to declare it as a constant.
      *
-     * Hint: Declaring a state varaible as a constant hepls to save gas.
+     * Hint: Declaring a state varaible as a constant hepls to save gas, ie it is very useful for gas optimization.
      *
      * For naming convention capitalize the variable name when you declare a state variable as a constant
      */
