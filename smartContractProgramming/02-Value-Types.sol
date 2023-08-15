@@ -14,7 +14,8 @@ contract ValueTypes {
 
     bool public b = true;
     uint public u = 123;
-    //Hint: Unsighned Integers(uint), support only numbers greater than zero unit = uint256, 0 to 2**256 -1
+    //Hint: Unsighned Integers(uint), support only numbers greater than zero ie strictly positive numbers.
+    //  unit = uint256, 0 to 2**256 -1
     // unit8, 0 to 2**8 -1
     //uint16, 0 to 2**16 -1
 
