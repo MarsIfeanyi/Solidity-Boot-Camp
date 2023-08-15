@@ -15,6 +15,7 @@ contract LocalVariables {
 
         // more code
 
+        // Updating the state varaibles
         i = 123;
         b = true;
         myAddress = address(1);
